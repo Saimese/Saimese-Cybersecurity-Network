@@ -1,3 +1,1 @@
-# hello-world
-practice
-I have 2 chinchillas
+Hey everyone! I'm going to use this repository to practice learning GitHub and record my TryHackMe room walk throughs.
