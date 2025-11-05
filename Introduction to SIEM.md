@@ -31,20 +31,29 @@ Selecting the right ACTION will display the FLAG. What is the FLAG?
 
 ## Things You Should Know
 
-SIEM Detection Rules
+**SIEM Detection Rules**
 1. Collect data from sources
 2. Aggregate data
 3. Discover and detect threats
 4. Identify breaches and investigate alerts
 
-Features of SIEM
+**Features of SIEM**
 - Centralized Log Collection
 - Normalization of Logs
 - Correlation of Logs
 - Real-time Alerting
 - Dashboards and Reporting
 
-How do SIEM solutions ingest logs?
+**How do SIEM solutions ingest logs?**
 1. Agent/Forwarder
-   -a lightweight tool (an agent/forwarder) gets installed at the endpoint and its made to capture and send all important logs to the SIEM Server
-2. 
+   - A lightweight tool (an agent/forwarder) gets installed at the endpoint and its made to capture and send all important logs to the SIEM Server
+2. Syslog
+   - A common protocol that collects data from systems like web servers, databases, and more to send real-time data to a centralized destination
+3. Manual Upload
+   - Some SIEM solutions let users ingest offline data to have fast analysis. Once the data is ingested, it is normalized and available for analysis.
+4. Port-Forwarding
+   - SIEM solutions can be configured to listen on a specific port and the endpoints forward the data to the SIEM session on the listening port.
+
+**How is a detection rule created?**
+There are two example cases in which different rules can be created
+1. If a hacker is trying to cover their tracks after they exploit, they will try to delete their logs. However, there is an indicator that shows when someone tries to delete their logs. Event ID 104 is logeed everytime a user tries to remove 
