@@ -27,3 +27,24 @@ Which option best represents the event?
 **True Positive**
 
 Selecting the right ACTION will display the FLAG. What is the FLAG?
+
+
+## Things You Should Know
+
+SIEM Detection Rules
+1. Collect data from sources
+2. Aggregate data
+3. Discover and detect threats
+4. Identify breaches and investigate alerts
+
+Features of SIEM
+- Centralized Log Collection
+- Normalization of Logs
+- Correlation of Logs
+- Real-time Alerting
+- Dashboards and Reporting
+
+How do SIEM solutions ingest logs?
+1. Agent/Forwarder
+   -a lightweight tool (an agent/forwarder) gets installed at the endpoint and its made to capture and send all important logs to the SIEM Server
+2. 
