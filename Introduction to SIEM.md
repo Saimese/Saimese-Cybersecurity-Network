@@ -54,17 +54,22 @@ Selecting the right ACTION will display the FLAG. What is the FLAG?
 ### How do SIEM solutions ingest logs?
 **1. Agent/Forwarder**
    - A lightweight tool (an agent/forwarder) gets installed at the endpoint and its made to capture and send all important logs to the SIEM Server
+
 **2. Syslog**
    - A common protocol that collects data from systems like web servers, databases, and more to send real-time data to a centralized destination
+
 **3. Manual Upload**
    - Some SIEM solutions let users ingest offline data to have fast analysis. Once the data is ingested, it is normalized and available for analysis.
+
 **4. Port-Forwarding**
    - SIEM solutions can be configured to listen on a specific port and the endpoints forward the data to the SIEM session on the listening port.
 
 ### How is a detection rule created?
 There are **two** example cases in which different rules can be created
+
 **1.** If a hacker is trying to cover their tracks after they exploit, they will try to delete their logs. However, there is an indicator that shows when someone tries to delete their logs. Event ID 104 is logged everytime a user tries to remove or clear event logs.
-   **- Example Rule: If the Log source is WinEventLog AND EventID is 104, Then trigger an alert named Event Log Cleared**
+
+   **-Example Rule: If the Log source is WinEventLog AND EventID is 104, Then trigger an alert named Event Log Cleared**
 
 **2.** Hackers use the command "whoami" to guage their permissions and priviledges and infilitration and priviledge escalation. When making a rule, you should have these 3 fields
    - **Log source**: identify what source is giving you the event logs
