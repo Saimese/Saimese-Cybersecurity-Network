@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img width="1536" height="1024" alt="Saimese Cyber Security Network" src="https://github.com/user-attachments/assets/Saimese Cyber Security Roadmap" />
+  <img alt="Saimese Cyber Security Network" src="https://github.com/assets/Saimese Cyber Security Network.png" />
 
 </a>
 
