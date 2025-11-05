@@ -1,3 +1,5 @@
+##Answers
+
 What does SIEM stand for?
 **Security Information and Event Management System**
 
@@ -13,7 +15,7 @@ Which Event ID is generate when event logs are removed?
 
 What type of alert may require tuning?
 
-After clicking on the Start Suspicious Activity button, which process caused the alert?
+After clicking on the *Start Suspicious Activity button*, which process caused the alert?
 
 Find the event that caused the alert and identify the user responsible for the process execution.
 
