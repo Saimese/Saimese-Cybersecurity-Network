@@ -1,10 +1,5 @@
-<div align="center">
 
-  <img alt="Saimese Cyber Security Network" src="(https://github.com/Saimese/Saimese-Cybersecurity-Network/blob/18f1c471dc28bb7c52d25bed8e006b92227c22a7/assets/Saimese%20Cyber%20Security%20Network.png)" />
-
-</a>
-
-</div>
+![alt=Logo](https://github.com/Saimese/Saimese-Cybersecurity-Network/blob/18f1c471dc28bb7c52d25bed8e006b92227c22a7/assets/Saimese%20Cyber%20Security%20Network.png)
 
 Hi everyone, welcome to my Cybersecurity Network! 
 
