@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img alt="Saimese Cyber Security Network" src="https://github.com/assets/Saimese Cyber Security Network.png" />
+  <img alt="Saimese Cyber Security Network" src="https://github.com/Saimese/assets/Saimese Cyber Security Network.png" />
 
 </a>
 
