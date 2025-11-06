@@ -38,10 +38,40 @@ A Firewall filters incoming and outgoing traffic on a device. It simply acts as 
 
 ### Types of Firewalls
 **Stateless Firewall**
-- This is the simplest firewall with basic filtering, no tracking of previous connections, data tracking based on predetermined rules, and efficiency on high-speed networks
+- This is the simplest firewall with basic filtering, no tracking of previous connections, data tracking based on predetermined rules, and efficiency on high-speed networks. It operates on layer 3 and 4 of the OSI model.
 
 **Stateful Firewall**
-- This Firewall is a bit smarter. It recognizes traffic by patterns, applies complex rules, monitors network connections, and stores data such as previous connections.
-Proxy Firewall
+- This Firewall is a bit smarter. It recognizes traffic by patterns, applies complex rules, monitors network connections, and stores data such as previous connections. It operates on layer 3 and 4 of the OSI model.
+  
+**Proxy Firewall**
+- Proxy Firewalls can inspect the data inside the packets, provide content filtering options, provide application control, and decrypt and inspect SSL/TLS data packets in addition to all of the previous Firewall's functions. It operates on layer 7 of the OSI model.
+  
+**Next-Generation Firewall (NGFW)**
+- Next-Generation Firewalls are the most advanced firewalls. They provide advanced threat protection, come with an intrusion prevention system, identify anomalies based on heuristic analysis, and decrypt and inspect SLL/TLS data packets. It operates on layers 3-7 of the OSI model.
 
-Next-Generation Firewall (NGFW)
+### Basic Components of a Firewalls Rule
+
+**Source Address:** IP address that originates traffic
+
+**Destination Address:** IP address that recieves data/traffic
+
+**Port:** Port number Traffic is recieved/sent through
+
+**Protocol:** The protocol that would be used during the communication
+
+**Action:** What action does the rule take after identifying any traffic of a certain nature?
+
+**Direction:** Will this rule be applied to incoming or outgoing traffic?
+
+### Types of Actions
+
+**Allow:** When Allow is placed in a rule, the rule will permit certain incoming or outgoing traffic.
+
+**Deny:** When Deny is placed in a rule, the rule will block certain incoming or outgoing traffic.
+
+**Forward:** When Forward is placed in a rule, the rule will redirect traffic to a different network segment.
+
+### Directions of Rules
+
+**Inbound Rules:** An inbound rule will apply to incoming traffic. For example, You can allow incoming HTTP traffic from Port 80 on your web server
+
