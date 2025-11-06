@@ -84,9 +84,9 @@ A Firewall filters incoming and outgoing traffic on a device. It simply acts as 
 **Netfilter**
 
 Netfilter is the framework inside Linux OS with core firewall functions. There are various firewall utilities that use Netfilter as a foundation to control network traffic. Some examples are:
-- iptables:The most widely used utility in many Linux distributions that uses Netfilter framework to give a variety of functions to control network traffic.
-- nftables: The successor to iptables with enhanced packet filtering and NAT capabilities.
-- firewalld: This utility has predefined rules and works differently than the other utilities since it comes with different pre-built network zone configurations.
+- **iptables:** The most widely used utility in many Linux distributions that uses Netfilter framework to give a variety of functions to control network traffic.
+- **nftables:** The successor to iptables with enhanced packet filtering and NAT capabilities.
+- **firewalld:** This utility has predefined rules and works differently than the other utilities since it comes with different pre-built network zone configurations.
 
 **ufw (Uncomplicated Firewall)**
 ufw is a firewall with the Netfilter framework on Linux that eliminates the complicated syntax it takes to make rules on iptables and nftables. It gives users an easier, beginner-friendly interface.
