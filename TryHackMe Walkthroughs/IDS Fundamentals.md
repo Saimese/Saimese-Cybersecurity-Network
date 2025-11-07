@@ -50,8 +50,28 @@ An Intrusion Detection System (IDS) is like survellance cameras that can detect 
 
 **Signature-Based IDS:** Different cyber attacks have unique patterns that are stored in a database so the IDS can detect attacks that have been executed previously somewhere else. Signature-Based IDS cannot detect zero-day attacks which are attacks that have never been used before. Snort is an example of a Signature-Based IDS
 
-**Anomaly-Based IDS:** This type of IDS learns the normal behavior of the network/system and preforms detections to find deviations or anomalies in the normal behavior. 
+**Anomaly-Based IDS:** This type of IDS learns the normal behavior of the network/system and preforms detections to find deviations or anomalies in the normal behavior. It can detect zero-day attacks since it goes based off of abnormalities in the system instead of previous signatures. However, it generats a lot of false positives since malicious programs can match legitimate programs.
 
+**Hybrid IDS:** A Hybrid IDS combines a Signature-Based IDS and an Anomaly-Based IDS. It changes its detection mode based on if it was a signature matching the IDS database or if its a new threat. It leverages the strengths of both detection modes.
 
+### Snort
 
+**Packet Sniffer Mode:**
 
+This mode reads and displays network packets without preforming an analysis on them. This allows you to display network traffic on the console or output it to a file. Its useful if you need to detect a specific problem that doesnt need diagnoses.
+
+**Packet Logging Mode:**
+
+This mode performs detection on the network traffic in real-time and displays detections as alerts for you to take action. It also can log all network traffic and detections in a PCAP (Standard Packet Capture Format) file so it can be referred to for analysis later on.
+
+**Network Intrusion Detection System Mode:**
+
+The NIDS mode is the primary mode of Snort that monitors network traffic in real-time while applying its rule files to detect attacks that match the patterns stored as signatures in its database.
+
+## Snort Rule Formats
+
+{Need Rule Format Image}
+
+**Action:** When the rule triggers, what action will the rule take?
+
+**Protocol:** 
