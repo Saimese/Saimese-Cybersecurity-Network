@@ -74,4 +74,10 @@ The NIDS mode is the primary mode of Snort that monitors network traffic in real
 
 **Action:** When the rule triggers, what action will the rule take?
 
-**Protocol:** 
+**Protocol:** What protocol (For example: ICMP) does this rule
+
+**Source IP:** What IP is send the traffic to the destination?
+
+**Source Port:** The port from which that traffic comes from.
+
+**Destination IP:** What IP address is the traffic going to? It generates the alerts.
