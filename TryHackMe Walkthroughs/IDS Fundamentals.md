@@ -81,3 +81,10 @@ The NIDS mode is the primary mode of Snort that monitors network traffic in real
 **Source Port:** The port from which that traffic comes from.
 
 **Destination IP:** What IP address is the traffic going to? It generates the alerts.
+
+**Destination Port:** The Port that traffic goes to.
+
+**Rule Metadata:** Metadata is defined at the end of a rule in parentheses. Some examples are:
+- Message (msg)
+- Signature ID (sid)
+- Rule Revision (rev)
