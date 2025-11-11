@@ -40,3 +40,38 @@ What is the Base85 decoded string of the value <+oue+DGm>Ap%u7 ?
 **This is fun!**
 
 ## Things You Should Know
+
+There are four parts of CyberChef
+
+**Operations:**
+ The operations are is the column on the left. It holds all of the processes and actions you can use to get to your goal.
+
+**Recipe:**
+ You drag the actions from the operations column to the recipe column. This is where the computer is told what processes it will be doing, whether its encoding in base64, decoding a URL, or something else.
+
+**Input:**
+ The input is where you put your ingredients. Or more specifically, you put a string that you want to translate or convert from one thing to another using your recipe.
+
+**Output:**
+ The output area is what happens once your input is converted through your recipe. It spits out what you tell it to by following your recipe.
+
+### Process of Using CyberChef
+
+There are four steps you should work through before using cyber chef
+
+**Step 1:**
+ Set a clear objective
+
+**Step 2:**
+ Put your data into the input area
+
+**Step 3:**
+ Select the Operations you might want to use
+
+**Step 4:**
+ Check the output to see if it is the intended result. Hence repeat the preocess either from step 1 or step 3
+
+ ### Practice
+
+ I would suggest from here to take some time and explore all of the operations the CyberChef has to offer.
+  
