@@ -82,3 +82,34 @@ Which feature of this CAPA Web Explorer allows you to filter options or results?
 **Global Search Box**
 
 ## Things You Should Know
+
+**Syntax**
+
+**-h** :Help message that shows info and exit (Example Syntax: capa -h)
+
+**-v** :Enables verbose result document (Example Syntax: capa.exe .\cryptbot.bin -v)
+
+**-vv** :Enables very verbose result document (Example Syntax: capa.exe .\cryptbot.bin -vv)
+
+**Get-Content**: A PowerShell command that allows you to read the content of a file
+
+### CAPA Results
+
+**MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge)**
+
+This framework functions as a strategic playbook that provides detailed insights into attackers methods from gaining initial access to maintaining a presence, escalating priviledges, evading defenses, moving laterally within a network, and more.
+
+**MAEC (Malware Attribute Enumeration and Characterization)**
+
+This is a specialized language designed to encode and communicate complex details concerning malware that contains a wide variety of attributes, including behaviors, artefacts, and interconnections among various instances of malware.
+
+The table below shows the most commonly used MAEC values by CAPA
+
+|MAEC Value|Description|
+|Launcher|Exhibits behaviors that trigger specific actions similar to malware behavior|
+|Downloader|Exhibits Behaviors wherein it downloads and execute other files, usually seen on more complex malware|
+
+### Malware Behavior Catalogue (MBC)
+
+The MBC is designed to support various aspects of malware analysis, such as labelling, similarity analysis, and standardized reporting. Its basically a catalogue of malware objectives and behaviors.
+
