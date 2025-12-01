@@ -33,6 +33,17 @@ Using PEStudio, open the file windows.exe. What is the entropy value of the file
 
 Using PEStudio, open the file windows.exe, then go to manifest (administrator section). What is the value under requestedExecutionLevel? **requireAdministrator**
 
+Which function allows the process to use the operating system's shell to execute other processes? **set_UseShellExecute**
+
+Which API starts with R and indicates that the executable uses cryptographic functions? **RijndaelManaged**
+
+What is the Imphash of cobaltstrike.exe? **92EEF189FB188C541CBD83AC8BA4ACF5**
+
+What is the defanged IP address to which the process cobaltstrike.exe is connecting? **47[.]120[.]46[.]210**
+
+What is the destination port number used by cobaltstrike.exe when connecting to its C2 IP Address? **81**
+
+During our analysis, we found a process called cobaltstrike.exe. What is the parent process of cobaltstrike.exe?  **explorer.exe**
 
 ## Things You Should Know
 FlareVM, or "Forensics, Logic Analysis, and Reverse Engineering," stands out as a comprehensive and carefully curated collection of specialized tools uniquely designed to meet the specific needs of reverse engineers, malware analysts, incident responders, forensic investigators, and penetration testers. This toolkit, expertly crafted by the FLARE Team at FireEye, is a powerful aid in unravelling digital mysteries, gaining insight into malware behaviour, and delving into the complex details within executables.
