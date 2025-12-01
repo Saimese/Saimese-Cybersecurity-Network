@@ -1,9 +1,43 @@
 ## Answers
+Which tool is an Open-source debugger for binaries in x64 and x32 formats? **x64dbg**
+
+What tool is designed to analyze and edit Portable Executable (PE) files? **CFF Explorer**
+
+Which tool is considered a sophisticated memory editor and process watcher? **Process Hacker**
+
+Which tool is used for Disc image acquisition and analysis for forensic use? **FTK Imager**
+
+What tool can be used to view and edit a binary file? **HxD**
+
+Which tool was formerly known as FireEye Labs Obfuscated String Solver? **FLOSS**
+
+Which tool offers in-depth insights into the active processes running on your computer? **Process Explorer**
+
+By using the Process Explorer (procexp) tool, under what process can we find smss.exe? **System**
+
+Which powerful Windows tool is designed to help you record issues with your system's apps? **Procmon**
+
+Which tool can be used for Static analysis or studying executable file properties without running the files? **PEStudio**
+
+Using the tool PEStudio to open the file cryptominer.bin in the Desktop\Sample folder, what is the sha256 value of the file? **E9627EBAAC562067759681DCEBA8DDE8D83B1D813AF8181948C549E342F67C0E**
+
+Using the tool PEStudio to open the file cryptominer.bin in the Desktop\Sample folder, how many functions does it have? **102**
+
+What tool can generate file hashes for integrity verification, authenticate the source of system files, and validate their validity? **CFF Explorer**
+
+Using the tool CFF Explorer to open the file possible_medusa.txt in the Desktop\Sample folder, what is the MD5 of the file? **646698572AFBBF24F50EC5681FEB2DB7**
+
+Use the CFF Explorer tool to open the file possible_medusa.txt in the Desktop\Sample folder. Then, go to the DOS Header Section. What is the e_magic value of the file? **5A4D**
+
+Using PEStudio, open the file windows.exe. What is the entropy value of the file windows.exe? **7.999**
+
+Using PEStudio, open the file windows.exe, then go to manifest (administrator section). What is the value under requestedExecutionLevel? **requireAdministrator**
+
 
 ## Things You Should Know
 FlareVM, or "Forensics, Logic Analysis, and Reverse Engineering," stands out as a comprehensive and carefully curated collection of specialized tools uniquely designed to meet the specific needs of reverse engineers, malware analysts, incident responders, forensic investigators, and penetration testers. This toolkit, expertly crafted by the FLARE Team at FireEye, is a powerful aid in unravelling digital mysteries, gaining insight into malware behaviour, and delving into the complex details within executables.
 
-### Tools
+### Tools in FlareVM
 
 **Reverse Engineering & Debugging**
 
