@@ -135,3 +135,7 @@
   background: rgba(34, 211, 238, 0.18);
   transform: translateX(4px);
 }
+.walkthrough-list li a {
+  color: #22c55e;
+}
+
