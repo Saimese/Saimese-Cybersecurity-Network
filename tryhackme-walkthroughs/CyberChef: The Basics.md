@@ -1,3 +1,4 @@
+# CyberChef: The Basics
 ## Answers
 
 In which area can you find "From Base64"?
