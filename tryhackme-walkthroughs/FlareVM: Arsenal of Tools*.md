@@ -1,3 +1,4 @@
+# FlareVM: Arsenal of Tools
 ## Answers
 Which tool is an Open-source debugger for binaries in x64 and x32 formats? **x64dbg**
 
