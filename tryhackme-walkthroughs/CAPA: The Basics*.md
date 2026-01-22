@@ -1,3 +1,4 @@
+# CAPA: The Basics
 ## Answers
 
 What command-line option would you use if you need to check what other parameters you can use with the tool? Use the shortest format.
