@@ -1,3 +1,4 @@
+# IDS Fundamentals
 ## Answers
 
 Can an intrusion detection system (IDS) prevent the threat after it detects it? Yea/Nay
