@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Comments from '../../components/Comments.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const walkthroughs = await getCollection('walkthroughs');
+  return walkthroughs.map((walkthrough) => ({
+    params: { slug: walkthrough.slug },
+    props: { walkthrough },
+  }));
+}
+
+const { walkthrough } = Astro.props;
+const { Content } = await walkthrough.render();
+---
+
+<BaseLayout title={walkthrough.data.title} description={walkthrough.data.description}>
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Header -->
+    <header class="mb-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class={`px-3 py-1 rounded-full text-sm font-semibold ${
+          walkthrough.data.difficulty === 'Easy' ? 'bg-green-500/20 text-green-400' :
+          walkthrough.data.difficulty === 'Medium' ? 'bg-yellow-500/20 text-yellow-400' :
+          'bg-red-500/20 text-red-400'
+        }`}>
+          {walkthrough.data.difficulty}
+        </span>
+        <span class="text-gray-500 text-sm">
+          {walkthrough.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </span>
+      </div>
+      
+      <h1 class="text-4xl md:text-5xl font-bold text-cyber-accent mb-4">
+        {walkthrough.data.title}
+      </h1>
+      
+      {walkthrough.data.description && (
+        <p class="text-gray-400 text-lg">{walkthrough.data.description}</p>
+      )}
+      
+      <div class="flex flex-wrap gap-2 mt-4">
+        {walkthrough.data.tags.map((tag: string) => (
+          <span class="px-3 py-1 bg-cyber-accent/10 text-cyber-accent text-sm rounded font-mono">
+            #{tag}
+          </span>
+        ))}
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="prose prose-invert max-w-none bg-cyber-dark/50 rounded-lg p-8 border border-cyber-accent/20">
+      <Content />
+    </div>
+
+    <!-- Comments -->
+    <Comments id={walkthrough.slug} />
+  </article>
+</BaseLayout>
