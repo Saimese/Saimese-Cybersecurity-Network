@@ -1,4 +1,4 @@
-# Saimese Cybersecurity Network (SCN)
+# Saimese Cybersecurity Network (SCN) 
 
 A modern, GitHub-native cybersecurity education platform featuring TryHackMe walkthroughs and security news.
 
