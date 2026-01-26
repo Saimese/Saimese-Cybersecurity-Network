@@ -1,0 +1,47 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="bg-cyber-dark border-b border-cyber-accent/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex items-center">
+        <a href="/" class="text-cyber-accent font-bold text-xl font-mono">
+          <span class="text-white">[</span>SCN<span class="text-white">]</span>
+        </a>
+      </div>
+      <div class="flex space-x-8">
+        <a 
+          href="/" 
+          class={`px-3 py-2 rounded-md text-sm font-medium transition ${
+            currentPath === '/' 
+              ? 'bg-cyber-accent/10 text-cyber-accent' 
+              : 'text-gray-300 hover:bg-cyber-blue/10 hover:text-white'
+          }`}
+        >
+          Home
+        </a>
+        <a 
+          href="/walkthroughs" 
+          class={`px-3 py-2 rounded-md text-sm font-medium transition ${
+            currentPath.startsWith('/walkthroughs') 
+              ? 'bg-cyber-accent/10 text-cyber-accent' 
+              : 'text-gray-300 hover:bg-cyber-blue/10 hover:text-white'
+          }`}
+        >
+          Walkthroughs
+        </a>
+        <a 
+          href="/news" 
+          class={`px-3 py-2 rounded-md text-sm font-medium transition ${
+            currentPath.startsWith('/news') 
+              ? 'bg-cyber-accent/10 text-cyber-accent' 
+              : 'text-gray-300 hover:bg-cyber-blue/10 hover:text-white'
+          }`}
+        >
+          News
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
