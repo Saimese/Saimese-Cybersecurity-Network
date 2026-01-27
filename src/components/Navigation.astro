@@ -1,20 +1,21 @@
 ---
 const currentPath = Astro.url.pathname;
+const base = import.meta.env.BASE_URL;
 ---
 
 <nav class="bg-cyber-dark border-b border-cyber-accent/20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <div class="flex items-center">
-        <a href="/" class="text-cyber-accent font-bold text-xl font-mono">
+        <a href={base} class="text-cyber-accent font-bold text-xl font-mono">
           <span class="text-white">[</span>SCN<span class="text-white">]</span>
         </a>
       </div>
       <div class="flex space-x-8">
         <a 
-          href="/" 
+          href={base} 
           class={`px-3 py-2 rounded-md text-sm font-medium transition ${
-            currentPath === '/' 
+            currentPath === base || currentPath === `${base}/`
               ? 'bg-cyber-accent/10 text-cyber-accent' 
               : 'text-gray-300 hover:bg-cyber-blue/10 hover:text-white'
           }`}
@@ -22,9 +23,9 @@ const currentPath = Astro.url.pathname;
           Home
         </a>
         <a 
-          href="/walkthroughs" 
+          href={`${base}/walkthroughs`}
           class={`px-3 py-2 rounded-md text-sm font-medium transition ${
-            currentPath.startsWith('/walkthroughs') 
+            currentPath.startsWith(`${base}/walkthroughs`) 
               ? 'bg-cyber-accent/10 text-cyber-accent' 
               : 'text-gray-300 hover:bg-cyber-blue/10 hover:text-white'
           }`}
@@ -32,9 +33,9 @@ const currentPath = Astro.url.pathname;
           Walkthroughs
         </a>
         <a 
-          href="/news" 
+          href={`${base}/news`}
           class={`px-3 py-2 rounded-md text-sm font-medium transition ${
-            currentPath.startsWith('/news') 
+            currentPath.startsWith(`${base}/news`) 
               ? 'bg-cyber-accent/10 text-cyber-accent' 
               : 'text-gray-300 hover:bg-cyber-blue/10 hover:text-white'
           }`}
