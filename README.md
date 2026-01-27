@@ -1,4 +1,5 @@
 # Saimese Cybersecurity Network (SCN)    
+Update Message: Plz Update
 
 A modern, GitHub-native cybersecurity education platform featuring TryHackMe walkthroughs and security news.
 
