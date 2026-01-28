@@ -54,6 +54,7 @@ Now if I wanted to add "tryhackme" to this file named "passwords" but also keep 
 ## Things You Should Know
 
 |Command|Description|
+|---|---|
 |echo|Output any text that we provide|
 |whoami|Find out what user we're currently logged in as!|
 |ls|List the name of a file or folder|
