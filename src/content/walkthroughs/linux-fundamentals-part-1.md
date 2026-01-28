@@ -61,3 +61,14 @@ Now if I wanted to add "tryhackme" to this file named "passwords" but also keep 
 |cd|Change directory or path you are currently in on command prompt|
 |cat| Short for concatenate, it allows you to view the contents inside a file|
 |pwd| Print Working Directory allows you to view the full file path of a folder or file|
+|find| Allows you to find a file or folder based on multiple parameters such as **find -name passwords.txt** or use an asterisk in place of passwords to search for all .txt files|
+|grep| Allows you to search a file for the specific content you want. Example: **grep "thing_you_want_to_find" whatever.log**|
+|wc| Use this to count the number of entries in a .log. Example: **wc whatever.log** Output:67|
+|grep -R|Use this to search for something across all files in the current directory and its subfolders|
+
+|Symbol|Description|
+|---|---|
+|&|This operator allows you to run commands in the background of your terminal.|
+|&&|This operator allows you to combine multiple commands together in one line of your terminal.|
+|>|This operator is a redirector - meaning that we can take the output from a command (such as using cat to output a file) and direct it elsewhere.|
+|>>|This operator does the same function of the > operator but appends the output rather than replacing (meaning nothing is overwritten).|
