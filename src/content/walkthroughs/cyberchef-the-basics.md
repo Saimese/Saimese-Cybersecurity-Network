@@ -1,4 +1,10 @@
-
+---
+title: "TryHackMe – CyberChef: The Basics"
+date: 2026-01-28
+tags: [cyber-security-101, tryhackme, walkthrough,]
+difficulty: Easy
+description: "This room is an introduction to CyberChef, the Swiss Army knife for cyber security professionals."
+---
 ## Answers
 
 In which area can you find "From Base64"?
