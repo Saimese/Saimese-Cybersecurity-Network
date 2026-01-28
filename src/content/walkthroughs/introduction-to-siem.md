@@ -1,3 +1,10 @@
+---
+title: "TryHackMe – Introduction to SIEM"
+date: 2026-01-28
+tags: [cyber-security-101, tryhackme, walkthrough,]
+difficulty: Easy
+description: "Learn the fundamentals of SIEM and explore its features and functionality."
+---
 # Introduction to SIEM
 ## Answers
 
