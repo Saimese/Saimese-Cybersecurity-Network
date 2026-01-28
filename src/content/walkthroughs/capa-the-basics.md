@@ -1,3 +1,11 @@
+---
+title: "TryHackMe – CAPA: The Basics"
+date: 2026-01-28
+tags: [cyber-security-101, tryhackme, walkthrough,]
+difficulty: Easy
+description: "Learn to use CAPA to identify malicious capabilities."
+---
+
 # CAPA: The Basics
 ## Answers
 
