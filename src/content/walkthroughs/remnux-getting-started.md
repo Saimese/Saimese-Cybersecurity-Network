@@ -1,3 +1,10 @@
+---
+title: "TryHackMe – REMnux: Getting Started"
+date: 2026-01-28
+tags: [cyber-security-101, tryhackme, walkthrough,]
+difficulty: Easy
+description: "Learn how you can use the tools inside the REMnux VM."
+---
 # REMnux: Getting Started
 ## Answers
 What Python tool analyzes OLE2 files, commonly called Structured Storage or Compound File Binary Format? **oledump.py**
