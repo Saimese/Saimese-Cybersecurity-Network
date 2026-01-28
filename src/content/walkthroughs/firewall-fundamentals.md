@@ -1,3 +1,10 @@
+---
+title: "TryHackMe – Firewall Fundamentals"
+date: 2026-01-28
+tags: [cyber-security-101, tryhackme, walkthrough,]
+difficulty: Easy
+description: "Learn about firewalls and get hands-on with Windows and Linux built-in firewalls."
+---
 # Firewall Fundamentals
 ## Answers
 Which security solution inspects the incoming and outgoing traffic of a device or a network?
