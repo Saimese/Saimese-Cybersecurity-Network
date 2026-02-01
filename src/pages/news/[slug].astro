@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Comments from '../../components/Comments.astro';
+import Giscus from '../../components/Giscus.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -21,7 +21,11 @@ const { Content } = await article.render();
     <header class="mb-8">
       <div class="flex items-center gap-4 mb-4 text-sm text-gray-500">
         <span>
-          {article.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          {article.data.date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })}
         </span>
         {article.data.author && (
           <>
@@ -30,13 +34,13 @@ const { Content } = await article.render();
           </>
         )}
       </div>
-      
+
       <h1 class="text-4xl md:text-5xl font-bold text-cyber-accent mb-4">
         {article.data.title}
       </h1>
-      
+
       <p class="text-gray-400 text-lg mb-4">{article.data.summary}</p>
-      
+
       <div class="flex flex-wrap gap-2">
         {article.data.tags.map((tag: string) => (
           <span class="px-3 py-1 bg-cyber-purple/10 text-cyber-purple text-sm rounded font-mono">
@@ -51,34 +55,9 @@ const { Content } = await article.render();
       <Content />
     </div>
 
-    <!-- Comments -->
-    <Comments id={article.slug} />
+    <!-- Comments (Giscus, one thread per news URL) -->
+    <section class="mt-10">
+      <Giscus />
+    </section>
   </article>
-</BaseLayout>
-
----
-// src/pages/news/[slug].astro
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
-import Giscus from '../../components/Giscus.astro';
-
-export async function getStaticPaths() {
-  const news = await getCollection('news');
-  return news.map((entry) => ({
-    params: { slug: entry.slug },  // e.g. "my-first-news-post"
-    props: { entry },
-  }));
-}
-
-const { entry } = Astro.props;
-const { Content, data } = await entry.render();
----
-
-<BaseLayout title={data.title}>
-  <article>
-    <h1>{data.title}</h1>
-    <Content />
-  </article>
-
-  <Giscus />  {/* individual comments per news article */}
 </BaseLayout>
