@@ -19,7 +19,7 @@ const walkthroughs = (await getCollection('walkthroughs'))
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {walkthroughs.map((walkthrough) => (
         <a 
-          href={`${base}walkthroughs/${walkthrough.slug}`}
+          href={`${base}walkthroughs/${walkthrough.slug}/`}
           class="block bg-cyber-dark rounded-lg border border-cyber-accent/20 p-6 hover:border-cyber-accent/50 transition transform hover:scale-105"
         >
           <div class="flex items-center justify-between mb-4">
