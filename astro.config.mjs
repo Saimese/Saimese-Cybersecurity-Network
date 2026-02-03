@@ -1,10 +1,9 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
-// https://astro.build/config
 export default defineConfig({
   site: 'https://saimese.github.io',
-  base: 'saimese-cybersecurity-network',
+  base: '/saimese-cybersecurity-network',
   integrations: [tailwind()],
   markdown: {
     shikiConfig: {
@@ -14,5 +13,6 @@ export default defineConfig({
   },
   build: {
     assets: '_astro'
-  }
+  },
+  trailingSlash: 'always'
 });
