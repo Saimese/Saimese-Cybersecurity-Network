@@ -6,7 +6,6 @@ difficulty: Easy
 description: "Learn to use CAPA to identify malicious capabilities."
 ---
 
-# CAPA: The Basics
 ## Answers
 
 What command-line option would you use if you need to check what other parameters you can use with the tool? Use the shortest format.
@@ -121,4 +120,3 @@ The table below shows the most commonly used MAEC values by CAPA
 ### Malware Behavior Catalogue (MBC)
 
 The MBC is designed to support various aspects of malware analysis, such as labelling, similarity analysis, and standardized reporting. Its basically a catalogue of malware objectives and behaviors.
-
