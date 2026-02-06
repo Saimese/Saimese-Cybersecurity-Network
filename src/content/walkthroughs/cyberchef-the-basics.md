@@ -5,6 +5,7 @@ tags: [cyber-security-101, tryhackme, walkthrough,]
 difficulty: Easy
 description: "This room is an introduction to CyberChef, the Swiss Army knife for cyber security professionals."
 ---
+
 ## Answers
 
 In which area can you find "From Base64"?
@@ -81,4 +82,3 @@ There are four steps you should work through before using cyber chef
  ### Practice
 
  I would suggest from here to take some time and explore all of the operations the CyberChef has to offer.
-  
