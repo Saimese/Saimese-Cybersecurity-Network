@@ -138,4 +138,3 @@ What is the real secret?
 * Use `search` to locate sensitive files quickly.
 * Be cautious when migrating to lower-privileged processes to avoid losing SYSTEM access.
 * Meterpreter is stealthy and flexible, perfect for **post-exploitation** in CTFs or pentesting labs.
-Do you want me to make that cheat sheet?
