@@ -5,7 +5,7 @@ tags: [cyber-security-101, tryhackme, walkthrough,]
 difficulty: Easy
 description: "Learn the fundamentals of IDS, along with the experience of working with Snort."
 ---
-# IDS Fundamentals
+
 ## Answers
 
 Can an intrusion detection system (IDS) prevent the threat after it detects it? Yea/Nay
