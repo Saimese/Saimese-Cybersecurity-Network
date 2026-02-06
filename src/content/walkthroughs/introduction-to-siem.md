@@ -6,7 +6,6 @@ difficulty: Easy
 description: "Learn the fundamentals of SIEM and explore its features and functionality."
 ---
 
-# Introduction to SIEM
 ## Answers
 
 What does SIEM stand for?
