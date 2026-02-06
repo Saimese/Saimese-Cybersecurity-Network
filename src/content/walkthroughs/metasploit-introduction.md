@@ -48,7 +48,7 @@ What command do you use to proceed with the exploitation phase?
 
 **exploit**
 
-## Key Takeaways
+## Things You Should Know
 
 **Metasploit Framework** is a penetration-testing platform used to discover, test, and validate security vulnerabilities. Its main interface is **msfconsole**, a command-line environment where you search for modules, configure options, run exploits, and manage connections to target systems.
 
