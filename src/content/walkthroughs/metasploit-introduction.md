@@ -48,33 +48,145 @@ What command do you use to proceed with the exploitation phase?
 **exploit**
 
 ## Key Takeaways
+**Metasploit – Condensed Overall Summary**
 
-**Exploit:** A piece of code that uses a vulnerability present on the target system.
+**Metasploit Framework** is a penetration-testing platform used to discover, test, and validate security vulnerabilities. Its main interface is **msfconsole**, a command-line environment where you search for modules, configure options, run exploits, and manage connections to target systems.
 
-**Vulnerability:** A design, coding, or logic flaw affecting the target system. The exploitation of a vulnerability can result in disclosing confidential information or allowing the attacker to execute code on the target system.
+---
 
-**Auxiliary:** Any supporting module, such as scanners, crawlers and fuzzers, can be found here.
+### Core Concepts
 
-**Encoders:** Encoders will allow you to encode the exploit and payload in the hope that a signature-based antivirus solution may miss them. Signature-based antivirus and security solutions have a database of known threats. They detect threats by comparing suspicious files to this database and raise an alert if there is a match. Thus encoders can have a limited success rate as antivirus solutions can perform additional checks.
+* **Vulnerability** – a weakness or flaw in a system.
+* **Exploit** – code that takes advantage of that weakness.
+* **Payload** – code executed on the target after exploitation (e.g., opening a shell or running commands).
+* **Session** – an active connection between attacker and target after successful exploitation.
 
-**Evasion:** While encoders will encode the payload, they should not be considered a direct attempt to evade antivirus software. On the other hand, “evasion” modules will try that, with more or less success.
+---
 
-**NOPs:** (No OPeration) do nothing, literally. They are represented in the Intel x86 CPU family with 0x90, following which the CPU will do nothing for one cycle. They are often used as a buffer to achieve consistent payload sizes.
+### Main Module Types
 
-### Payload 
-An exploit will take advantage of a vulnerability. However, if we want the exploit to have the result we want (gaining access to the target system, read confidential information, etc.), we need to use a payload. Payloads are the code that will run on the target system.
+* **Auxiliary:** Scanning, brute-forcing, fuzzing, and information gathering.
+* **Exploits:** Code that abuses vulnerabilities on specific platforms (Windows, Linux, etc.).
+* **Payloads:** What runs on the target.
 
-Examples could be; getting a shell, loading a malware or backdoor to the target system, running a command, or launching calc.exe as a proof of concept to add to the penetration test report. Starting the calculator on the target system remotely by launching the calc.exe application is a benign way to show that we can run commands on the target system.
+  * **Singles:** Self-contained.
+  * **Stagers/Stages:** Small loader + larger downloaded component.
+  * **Adapters:** Wrap payloads (e.g., PowerShell).
+* **Encoders:** Obfuscate payloads to try to avoid signature detection.
+* **Evasion:** More direct attempts to bypass security defenses.
+* **NOPs:** “No operation” padding for payload alignment.
+* **Post:** Actions after access (enumeration, privilege checks, credential gathering).
 
-Running command on the target system is already an important step but having an interactive connection that allows you to type commands that will be executed on the target system is better. Such an interactive command line is called a "shell". Metasploit offers the ability to send different payloads that can open shells on the target system.
+---
 
-Adapters: An adapter wraps single payloads to convert them into different formats. For example, a normal single payload can be wrapped inside a Powershell adapter, which will make a single powershell command that will execute the payload.
+### msfconsole Basics
 
-Singles: Self-contained payloads (add user, launch notepad.exe, etc.) that do not need to download an additional component to run.
+Launch with:
 
-Stagers: Responsible for setting up a connection channel between Metasploit and the target system. Useful when working with staged payloads. “Staged payloads” will first upload a stager on the target system then download the rest of the payload (stage). This provides some advantages as the initial size of the payload will be relatively small compared to the full payload sent at once.
+```
+msfconsole
+```
 
-Stages: Downloaded by the stager. This will allow you to use larger sized payloads.
+Common capabilities:
+
+* Works like a limited Linux shell (`ls`, `ping`, `clear`).
+* `help` and `history` for guidance.
+* **Tab completion** for faster typing.
+* **Context system:** selecting a module with `use` changes the prompt and settings apply only to that module unless set globally.
+
+---
+
+### Important Commands
+
+* **Search modules:**
+
+  ```
+  search apache
+  search type:auxiliary telnet
+  ```
+* **Select module:**
+
+  ```
+  use exploit/windows/smb/ms17_010_eternalblue
+  ```
+* **View options:**
+
+  ```
+  show options
+  show payloads
+  ```
+* **Set parameters:**
+
+  ```
+  set RHOSTS 10.10.x.x
+  set LPORT 4444
+  ```
+* **Global parameters:**
+
+  ```
+  setg RHOSTS 10.10.x.x
+  unsetg RHOSTS
+  ```
+* **Clear values:**
+
+  ```
+  unset PAYLOAD
+  unset all
+  ```
+* **Module info:**
+
+  ```
+  info
+  ```
+* **Run module:**
+
+  ```
+  exploit   or   run
+  exploit -z   (background session)
+  ```
+* **Check vulnerability only (if supported):**
+
+  ```
+  check
+  ```
+
+---
+
+### Prompts You May See
+
+* **System shell:** normal OS terminal.
+* **`msf6 >`** – main Metasploit console.
+* **Module context:** `msf6 exploit(...) >`
+* **`meterpreter >`** – advanced interactive payload.
+* **Target shell:** commands run directly on the compromised system.
+
+---
+
+### Sessions Management
+
+* List sessions:
+
+  ```
+  sessions
+  ```
+* Interact with one:
+
+  ```
+  sessions -i 1
+  ```
+* Background a session:
+
+  ```
+  background   or   CTRL+Z
+  ```
+
+---
+
+### Typical Workflow
+
+**Search → Use module → Show options → Set RHOSTS/LHOST/LPORT → Exploit/Run → Manage sessions → Post-exploitation.**
+
+In short, Metasploit is a modular, command-driven framework that organizes vulnerability testing into clear steps: **find, configure, exploit, and maintain access.**
 
 
 
