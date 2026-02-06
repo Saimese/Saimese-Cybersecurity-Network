@@ -5,8 +5,9 @@ tags: [cyber-security-101, tryhackme, walkthrough,]
 difficulty: Easy
 description: "Learn the arsenal of investigative tools in FlareVM."
 ---
-# FlareVM: Arsenal of Tools
+
 ## Answers
+
 Which tool is an Open-source debugger for binaries in x64 and x32 formats? **x64dbg**
 
 What tool is designed to analyze and edit Portable Executable (PE) files? **CFF Explorer**
