@@ -8,51 +8,97 @@ description: "Learn the arsenal of investigative tools in FlareVM."
 
 ## Answers
 
-Which tool is an Open-source debugger for binaries in x64 and x32 formats? **x64dbg**
+Which tool is an Open-source debugger for binaries in x64 and x32 formats? 
 
-What tool is designed to analyze and edit Portable Executable (PE) files? **CFF Explorer**
+**x64dbg**
 
-Which tool is considered a sophisticated memory editor and process watcher? **Process Hacker**
+What tool is designed to analyze and edit Portable Executable (PE) files? 
 
-Which tool is used for Disc image acquisition and analysis for forensic use? **FTK Imager**
+**CFF Explorer**
 
-What tool can be used to view and edit a binary file? **HxD**
+Which tool is considered a sophisticated memory editor and process watcher? 
 
-Which tool was formerly known as FireEye Labs Obfuscated String Solver? **FLOSS**
+**Process Hacker**
 
-Which tool offers in-depth insights into the active processes running on your computer? **Process Explorer**
+Which tool is used for Disc image acquisition and analysis for forensic use? 
 
-By using the Process Explorer (procexp) tool, under what process can we find smss.exe? **System**
+**FTK Imager**
 
-Which powerful Windows tool is designed to help you record issues with your system's apps? **Procmon**
+What tool can be used to view and edit a binary file? 
 
-Which tool can be used for Static analysis or studying executable file properties without running the files? **PEStudio**
+**HxD**
 
-Using the tool PEStudio to open the file cryptominer.bin in the Desktop\Sample folder, what is the sha256 value of the file? **E9627EBAAC562067759681DCEBA8DDE8D83B1D813AF8181948C549E342F67C0E**
+Which tool was formerly known as FireEye Labs Obfuscated String Solver? 
 
-Using the tool PEStudio to open the file cryptominer.bin in the Desktop\Sample folder, how many functions does it have? **102**
+**FLOSS**
 
-What tool can generate file hashes for integrity verification, authenticate the source of system files, and validate their validity? **CFF Explorer**
+Which tool offers in-depth insights into the active processes running on your computer? 
 
-Using the tool CFF Explorer to open the file possible_medusa.txt in the Desktop\Sample folder, what is the MD5 of the file? **646698572AFBBF24F50EC5681FEB2DB7**
+**Process Explorer**
 
-Use the CFF Explorer tool to open the file possible_medusa.txt in the Desktop\Sample folder. Then, go to the DOS Header Section. What is the e_magic value of the file? **5A4D**
+By using the Process Explorer (procexp) tool, under what process can we find smss.exe? 
 
-Using PEStudio, open the file windows.exe. What is the entropy value of the file windows.exe? **7.999**
+**System**
 
-Using PEStudio, open the file windows.exe, then go to manifest (administrator section). What is the value under requestedExecutionLevel? **requireAdministrator**
+Which powerful Windows tool is designed to help you record issues with your system's apps? 
 
-Which function allows the process to use the operating system's shell to execute other processes? **set_UseShellExecute**
+**Procmon**
 
-Which API starts with R and indicates that the executable uses cryptographic functions? **RijndaelManaged**
+Which tool can be used for Static analysis or studying executable file properties without running the files? 
 
-What is the Imphash of cobaltstrike.exe? **92EEF189FB188C541CBD83AC8BA4ACF5**
+**PEStudio**
 
-What is the defanged IP address to which the process cobaltstrike.exe is connecting? **47[.]120[.]46[.]210**
+Using the tool PEStudio to open the file cryptominer.bin in the Desktop\Sample folder, what is the sha256 value of the file? 
 
-What is the destination port number used by cobaltstrike.exe when connecting to its C2 IP Address? **81**
+**E9627EBAAC562067759681DCEBA8DDE8D83B1D813AF8181948C549E342F67C0E**
 
-During our analysis, we found a process called cobaltstrike.exe. What is the parent process of cobaltstrike.exe?  **explorer.exe**
+Using the tool PEStudio to open the file cryptominer.bin in the Desktop\Sample folder, how many functions does it have? 
+
+**102**
+
+What tool can generate file hashes for integrity verification, authenticate the source of system files, and validate their validity? 
+
+**CFF Explorer**
+
+Using the tool CFF Explorer to open the file possible_medusa.txt in the Desktop\Sample folder, what is the MD5 of the file? 
+
+**646698572AFBBF24F50EC5681FEB2DB7**
+
+Use the CFF Explorer tool to open the file possible_medusa.txt in the Desktop\Sample folder. Then, go to the DOS Header Section. What is the e_magic value of the file? 
+
+**5A4D**
+
+Using PEStudio, open the file windows.exe. What is the entropy value of the file windows.exe? 
+
+**7.999**
+
+Using PEStudio, open the file windows.exe, then go to manifest (administrator section). What is the value under requestedExecutionLevel? 
+
+**requireAdministrator**
+
+Which function allows the process to use the operating system's shell to execute other processes? 
+
+**set_UseShellExecute**
+
+Which API starts with R and indicates that the executable uses cryptographic functions? 
+
+**RijndaelManaged**
+
+What is the Imphash of cobaltstrike.exe? 
+
+**92EEF189FB188C541CBD83AC8BA4ACF5**
+
+What is the defanged IP address to which the process cobaltstrike.exe is connecting? 
+
+**47[.]120[.]46[.]210**
+
+What is the destination port number used by cobaltstrike.exe when connecting to its C2 IP Address? 
+
+**81**
+
+During our analysis, we found a process called cobaltstrike.exe. What is the parent process of cobaltstrike.exe?  
+
+**explorer.exe**
 
 ## Things You Should Know
 FlareVM, or "Forensics, Logic Analysis, and Reverse Engineering," stands out as a comprehensive and carefully curated collection of specialized tools uniquely designed to meet the specific needs of reverse engineers, malware analysts, incident responders, forensic investigators, and penetration testers. This toolkit, expertly crafted by the FLARE Team at FireEye, is a powerful aid in unravelling digital mysteries, gaining insight into malware behaviour, and delving into the complex details within executables.
