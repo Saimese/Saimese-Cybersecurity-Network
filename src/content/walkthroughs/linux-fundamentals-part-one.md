@@ -6,8 +6,8 @@ difficulty: Easy
 description: "Embark on the journey of learning the fundamentals of Linux. Learn to run some of the first essential commands on an interactive terminal."
 ---
 
-# Linux Fundamentals Part 1
 ## Answers
+
 Research: What year was the first release of a Linux operating system?
 
 **1991**
