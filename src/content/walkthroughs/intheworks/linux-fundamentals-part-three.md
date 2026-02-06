@@ -7,6 +7,7 @@ description: "Power-up your Linux skills and get hands-on with some common utili
 ---
 
 ## Answers
+
 Edit "task3" located in "tryhackme"'s home directory using Nano. What is the flag?
 
 **THM{TEXT_EDITORS}**
@@ -52,7 +53,6 @@ What file did they access?
 
 **catsanddogs.jpg**
 
-## Key Takeaways
+## Things You Should Know
 
-Know and understand the commands
 
