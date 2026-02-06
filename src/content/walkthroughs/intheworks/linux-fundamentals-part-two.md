@@ -6,7 +6,6 @@ difficulty: Easy
 description: "Continue your learning Linux journey with part two. You will be learning how to log in to a Linux machine using SSH, how to advance your commands, file system interaction."
 ---
 
-# Linux Fundamentals Part 2
 ## Answers
 
 What directional arrow key would we use to navigate down the manual page?
@@ -57,3 +56,4 @@ Name the home directory of the root user
 
 **/root**
 
+## Things You Should Know
