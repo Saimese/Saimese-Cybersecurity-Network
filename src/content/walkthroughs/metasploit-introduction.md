@@ -5,6 +5,7 @@ tags: [cyber-security-101, tryhackme, walkthrough,]
 difficulty: Easy
 description: "An introduction to the main components of the Metasploit Framework."
 ---
+
 ## Answers
 
 What is the name of the code taking advantage of a flaw on the target system?
@@ -48,7 +49,6 @@ What command do you use to proceed with the exploitation phase?
 **exploit**
 
 ## Key Takeaways
-**Metasploit – Condensed Overall Summary**
 
 **Metasploit Framework** is a penetration-testing platform used to discover, test, and validate security vulnerabilities. Its main interface is **msfconsole**, a command-line environment where you search for modules, configure options, run exploits, and manage connections to target systems.
 
@@ -187,9 +187,3 @@ Common capabilities:
 **Search → Use module → Show options → Set RHOSTS/LHOST/LPORT → Exploit/Run → Manage sessions → Post-exploitation.**
 
 In short, Metasploit is a modular, command-driven framework that organizes vulnerability testing into clear steps: **find, configure, exploit, and maintain access.**
-
-
-
-
-
-
